@@ -9,7 +9,7 @@ About r-qap
 
 Home: https://CRAN.R-project.org/package=qap
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
 Summary: Implements heuristics for the Quadratic Assignment Problem (QAP). Currently only a simulated annealing heuristic is available.
 
@@ -18,7 +18,7 @@ About r-qap
 
 Home: https://CRAN.R-project.org/package=qap
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
 Summary: Implements heuristics for the Quadratic Assignment Problem (QAP). Currently only a simulated annealing heuristic is available.
 
