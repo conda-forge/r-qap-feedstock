@@ -6,7 +6,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: qap_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/qap_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/qap/qap_{{ version }}.tar.gz
@@ -14,7 +13,6 @@ source:
 
 build:
   number: 3
-  skip: true  # [win32]
   rpaths:
     - lib/R/lib/
     - lib/
@@ -44,10 +42,11 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=qap
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Implements heuristics for the Quadratic Assignment Problem (QAP). Currently only a simulated annealing heuristic is available.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
