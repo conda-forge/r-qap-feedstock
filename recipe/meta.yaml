@@ -1,4 +1,4 @@
-{% set version = "0.1-2" %}
+{% set version = "0.2-0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/qap_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/qap/qap_{{ version }}.tar.gz
-  sha256: 47a4ada3ae7a3a5c9304174bd5291daad60d329d527c0c6bb5ec1ac257584da5
+  sha256: f27ad71ad9c27790623d2e435fb1b58ecbacf79c0e6cea9131bc360dee9985a3
 
 build:
-  number: 5
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
